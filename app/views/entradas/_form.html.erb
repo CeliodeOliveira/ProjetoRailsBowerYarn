@@ -1,0 +1,26 @@
+<%= javascript_include_tag 'entradas/form' %>
+<%= form_for(@entrada) do |f| %>
+  <% if @entrada.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@entrada.errors.count, "error") %> prohibited this entrada from being saved:</h2>
+
+      <ul>
+      <% @entrada.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :desc %><br />
+    <%= f.text_field :desc %>
+  </div>
+  <div class="field">
+    <%= f.label :dt %><br />
+    <%= f.text_field :dt %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

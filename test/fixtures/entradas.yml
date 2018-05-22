@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  desc: MyString
+  dt: 2018-05-21 10:19:08
+
+two:
+  desc: MyString
+  dt: 2018-05-21 10:19:08

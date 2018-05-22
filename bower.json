@@ -1,0 +1,20 @@
+{
+  "name": "prj",
+  "authors": [
+    "celio.oliveira <celio.oliveira@al.go.leg.br>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "datetimepicker": "^2.5.20"
+  }
+}

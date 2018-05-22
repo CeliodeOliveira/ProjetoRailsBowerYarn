@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Desc:</b>
+  <%= @entrada.desc %>
+</p>
+
+<p>
+  <b>Dt:</b>
+  <label class='date_time'>
+    <%= @entrada.dt %>
+  </label>
+</p>
+
+
+<%= link_to 'Edit', edit_entrada_path(@entrada) %> |
+<%= link_to 'Back', entradas_path %>
+
+
+<script>
+  $(document).ready(function(){ 
+    $('.date_time').mask('0000/00/00'); 
+  });
+</script>
